@@ -1,0 +1,19 @@
+#instructions {
+background: black;
+color: white;
+font-size: 12px;
+padding: 10px;
+}
+.boxes {
+    background: darkblue;
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    border: 2px;
+    border-color: aquamarine;
+    height: 60px;
+}
+.button {
+    width=100px;
+    height=100px;
+}

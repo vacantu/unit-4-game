@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CrystalsCollector Game - Recommended</title>
+    <script src="assets/javascript/game.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div id="instructions" class="container">
+          <h1 class="display-4">Crystals Collector!</h1>
+          <ul><h3>Here's how the app works:</h3>
+            <li>
+               There will be four crystals displayed as buttons on the page.
+            </li><li>6
+               The player will be shown a random number at the start of the game.
+            </li><li>
+               When the player clicks on a crystal, it will add a specific amount of points to the player's total score. 
+            </li><li>
+                Your game will hide this amount until the player clicks a crystal.
+            </li><li>
+                When they do click one, update the player's score counter.
+            </li><li>
+               The player wins if their total score matches the random number from the beginning of the game.
+            </li><li>
+               The player loses if their score goes above the random number.
+            </li><li>
+               The game restarts whenever the player wins or loses.
+            </li><li>
+               When the game begins again, the player should see a new random number. Also, all the crystals will have four new hidden values. Of course, the user's score (and score counter)will reset to zero.
+            </li></li>
+               The app should show the number of games the player wins and loses. To that end, do not refresh the page as a means to restart the game.
+            </Li>
+            </ul>
+        </div>
+      </div>
+    <div class="container boxes">
+         <div class="row">
+            <div id="randomNum" class="col-sm">
+                Random Number
+            </div>
+            <div id="myScore" class="col-sm">
+                    My Score<br/>
+                    <h3>0</h3>
+                </div>
+            <div id="wins" class="col-sm">
+                Wins<br/>
+                <h3>0</h3>
+            </div>
+            <div id="loses" class="col-sm">
+                Loses<br/>
+                <h3>0</h3>
+            </div>
+          </div>
+    </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <button id="one" class="button" onClick="javascript:addValue()">
+            <img src="https://shubhgems.in/pub/media/wysiwyg/Ruby.jpg"/></button>
+          </div>
+          <div class="col-sm">
+            <button id="two" class="button" onClick="javascript:addValue()">
+            <img src="https://5.imimg.com/data5/BK/OW/MY-10041778/hosonite-garnet-stone-250x250.jpg"/>
+          </div>
+          <div class="col-sm">
+            <button id="three" class="button" onClick="javascript:addValue()">
+            <img src="https://i.pinimg.com/originals/41/db/02/41db02d56c2db2244193956d5092c67d.jpg"/>
+          </div>
+          <div class="col-sm">
+            <button id="four" class="button" onClick="javascript:addValue()">
+            <img src="https://cdn.shopify.com/s/files/1/1691/1935/products/2017_-_002791_-_Hessonite_-_2.955_1024x1024.JPG?v=1506387462"/>
+            </div>
+        </div>
+      </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
