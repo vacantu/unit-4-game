@@ -32,9 +32,9 @@ $(document).ready(function(){
 
        function addValue() {
         $("#one").click(function(){ myScore = myScore + i[0]})
-        $("3two").click(function(){ myScore = myScore + i[1];})
-        $("3three").click(function(){ myScore = myScore + i[2];})
-        $("3four").click(function(){ myScore = myScore + i[3];})
+        $("#two").click(function(){ myScore = myScore + i[1];})
+        $("#three").click(function(){ myScore = myScore + i[2];})
+        $("#four").click(function(){ myScore = myScore + i[3];})
         $("#myScore").apend("<h3>" + myScore + "</h3>");
         if (myScore === randomNum){
             wins++; }
