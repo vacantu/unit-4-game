@@ -1,4 +1,4 @@
-$ (function() {
+$(document).ready(function(){
 
     var randomNum = 0;
     var wins = 0;
@@ -9,13 +9,13 @@ $ (function() {
 
 
 
-    genRandomNum(19,120);
-    $("#randomNum").text("<h3>" + randomNum + "</h3>");
+    randomNum = genRandomNum(19,120);
+    $("#randomNum").append("<h3>" + randomNum + "</h3>");
        for (i=1; i<4; i++) {
            jewels[i]=genRandomNum(1,12);
            console.log("Jewels random nums: " + jewels[i]);    
        }
-          // jQuery methods go here...
+          // jQuery methods to initialize go here...
           $("#wins").text("Wins<br/><h3>" + wins + "</h3>");
           $("#loses").text("Loses<br/><h3>" + loses + "</h3>");
           
@@ -31,11 +31,11 @@ $ (function() {
        }
 
        function addValue() {
-        $("one").click(function(){ myScore = myScore + i[0]})
-        $("two").click(function(){ myScore = myScore + i[1];})
-        $("one").click(function(){ myScore = myScore + i[2];})
-        $("one").click(function(){ myScore = myScore + i[3];})
-        $("#myScore").text("My Score<br/><h3>" + myScore + "</h3>");
+        $("#one").click(function(){ myScore = myScore + i[0]})
+        $("3two").click(function(){ myScore = myScore + i[1];})
+        $("3three").click(function(){ myScore = myScore + i[2];})
+        $("3four").click(function(){ myScore = myScore + i[3];})
+        $("#myScore").apend("<h3>" + myScore + "</h3>");
         if (myScore === randomNum){
             wins++; }
              else if (myScore > randomNum){
@@ -44,4 +44,4 @@ $ (function() {
         $("#wins").text("Wins<br/><h3>" + wins + "</h3>");
         $("#loses").text("Loses<br/><h3>" + loses + "</h3>");
        }
-});
+    });
